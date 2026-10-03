@@ -1,0 +1,515 @@
+{
+  "verified_at": "2026-10-03T15:56:16-04:00",
+  "scope": "Personal skills active at repository root; excludes uninstalled and built-in/plugin skills",
+  "packages": 39,
+  "unique_names": 38,
+  "skills": [
+    {
+      "id": "skill-6a5975ee4b8081919a4f1e6be00f4f7c",
+      "name": "antigravity-orchestrator-v2",
+      "display_name": "Antigravity Orchestrator v2",
+      "description": "Orquesta solicitudes de Michael mediante tres roles secuenciales: interpreta la intención y construye un brief, descubre y selecciona el mejor skill personal instalado, y ejecuta ese skill con validación y síntesis. Usar cuando la solicitud sea vaga, compleja, multidisciplinaria, pueda corresponder a varias skills, mencione el Realtor Playbook, pida que Codex elija el workflow correcto, o requiera coordinar investigación, análisis inmobiliario, marketing, contenido, financiación o entregables. No usar como capa adicional cuando el usuario invoque explícitamente una sola skill y la tarea sea clara.",
+      "source_sha256": "2f216faf007602b7bb8f7a46b48d25d0a6d083af8fba9d1f4413d76de1521465",
+      "sections": {
+        "Required Inputs": "",
+        "Modos": "",
+        "Output": "",
+        "KPIs": ""
+      }
+    },
+    {
+      "id": "skill-6a5975ffd76881919bdb04f58a3220a5",
+      "name": "codex-capability-discovery",
+      "display_name": "Codex Capability Discovery",
+      "description": "Inventariar capacidades instaladas y detectar brechas o solapamientos antes de crear una skill. Usar ante solicitudes de INVENTORY, GAP, OVERLAP.",
+      "source_sha256": "14e0e9875d0d3221ac3b90c0297ea2e72bef3abe0c35771a027e7f2135e2364e",
+      "sections": {
+        "Required Inputs": "Solicitud o raíz de Skills accesible.",
+        "Modos": "INVENTORY, GAP, OVERLAP",
+        "Output": "Inventario verificable; capacidades faltantes y owner sugerido.",
+        "KPIs": "Cobertura de inventario, duplicados por nombre y falsas brechas. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6a5976084bc481918a5c3d224b2210e9",
+      "name": "codex-prompt-architect",
+      "display_name": "Codex Prompt Architect",
+      "description": "Diseñar o mejorar prompts con contratos de inputs, outputs, límites y evaluaciones. Usar ante solicitudes de CREATE, REPAIR, EVALUATE.",
+      "source_sha256": "b81b71a480038bfe43dacc7b1cb1f58adbadb58b05014f057ed7edb701f6f18f",
+      "sections": {
+        "Required Inputs": "Objetivo, prompt existente si hay y ejemplo de resultado.",
+        "Modos": "CREATE, REPAIR, EVALUATE",
+        "Output": "Prompt listo para usar y criterios de evaluación.",
+        "KPIs": "Cumplimiento de instrucciones y correcciones por tarea. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6a59761261808191b057256994b950d9",
+      "name": "codex-skill-system-architect",
+      "display_name": "Codex Skill System Architect",
+      "description": "Diseñar, consolidar o reparar paquetes de Skills con referencias, scripts y quality gates. Usar ante solicitudes de CREATE, CONSOLIDATE, REPAIR, EVAL.",
+      "source_sha256": "6baead8d621eec445b8037bd0652bdeee8ef19d46d9732f06e714bdae99dff6c",
+      "sections": {
+        "Required Inputs": "Objetivo, inventario actual y casos representativos.",
+        "Modos": "CREATE, CONSOLIDATE, REPAIR, EVAL",
+        "Output": "Paquete validado; mapa de ownership; evidencia de pruebas.",
+        "KPIs": "Enlaces válidos; cobertura funcional; regresiones y routing. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6a597622bba0819194ec2cc8c115ed18",
+      "name": "deep-cma-hybrid-valuation",
+      "display_name": "Deep Cma Hybrid Valuation",
+      "description": "Calcular y reconciliar CMA, valor de mercado y escenarios de precio con comparables e histórico documentados. Usar ante solicitudes de CMA, HYBRID, PRICING, AUDIT.",
+      "source_sha256": "79a152382f9799dc4f431afa25225acf8bcd17cc036a42e84e0c17cc6cbae1aa",
+      "sections": {
+        "Required Inputs": "Propiedad, specs y comps o acceso autorizado a fuentes; fecha de valoración.",
+        "Modos": "CMA, HYBRID, PRICING, AUDIT",
+        "Output": "Rango de valor, comps, ajustes, reconciliación, fuentes y pricing handoff.",
+        "KPIs": "Calidad de comps, trazabilidad de ajustes, cobertura y error observado posterior. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6a59762c51d08191ba252e72ed06f6a5",
+      "name": "dscr-loan-underwriter",
+      "display_name": "Dscr Loan Underwriter",
+      "description": "Calcular DSCR y restricciones de préstamo con definición de lender explícita. Usar ante solicitudes de RESIDENTIAL_DSCR, NOI_DSCR, LOAN_LIMIT, SENSITIVITY.",
+      "source_sha256": "c03eca39c3bea34bbf094ef72dd055bd1b944b088e0a720772c7ef7694013dc8",
+      "sections": {
+        "Required Inputs": "Renta documentada, gastos y propuesta de financiación.",
+        "Modos": "RESIDENTIAL_DSCR, NOI_DSCR, LOAN_LIMIT, SENSITIVITY",
+        "Output": "DSCR, fórmula, inputs, ceiling condicionado y pendientes del lender.",
+        "KPIs": "DSCR reproducible, coverage y sensibilidad a tasa/renta. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6a59764c6c4c8191ac1975600cd95b8e",
+      "name": "google-business-profile-intelligence",
+      "display_name": "Google Business Profile Intelligence",
+      "description": "Auditar y mejorar elegibilidad, NAP, categorías, reviews, performance y visibilidad local de Google Business Profile. Usar ante solicitudes de ELIGIBILITY, AUDIT, OPTIMIZE, REVIEWS, PERFORMANCE.",
+      "source_sha256": "523a210c6ee0bf5ad4d6083e64909d939e695e2df9f6f52bd5d7aa515cc9f310",
+      "sections": {
+        "Required Inputs": "Negocio y perfil identificado; acceso autorizado si se requiere escritura.",
+        "Modos": "ELIGIBILITY, AUDIT, OPTIMIZE, REVIEWS, PERFORMANCE",
+        "Output": "Audit, riesgos verificados, recomendaciones y plan medible.",
+        "KPIs": "Profile interactions, calls/appointments, NAP consistency y policy issues. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6a5976604de08191a3c1e1ed74037dd1",
+      "name": "listing-intelligence-launch-system",
+      "display_name": "Listing Intelligence Launch System",
+      "description": "Gestionar intake, listing appointment, lanzamiento, property copy, open house, monitoring, stale/relaunch y seller updates. Usar ante solicitudes de INTAKE, CMA, LISTING_APPOINTMENT, PRE_MARKET, LAUNCH, PROPERTY_COPY, OPEN_HOUSE, MONITOR, OPTIMIZE, PRICE_ADJUSTMENT, STALE, RELAUNCH, SELLER_UPDATE, CONTENT_10X.",
+      "source_sha256": "3d120a95b9ccb9185b04b46066b5653ff3b211f83b000e94f90f18a97d0f6586",
+      "sections": {
+        "Required Inputs": "Propiedad inequívoca y modo; facts suficientes para cada claim público.",
+        "Modos": "INTAKE, CMA, LISTING_APPOINTMENT, PRE_MARKET, LAUNCH, PROPERTY_COPY, OPEN_HOUSE, MONITOR, OPTIMIZE, PRICE_ADJUSTMENT, STALE, RELAUNCH, SELLER_UPDATE, CONTENT_10X",
+        "Output": "Entregables del modo, seller strategy, launch calendar, KPI y claim ledger.",
+        "KPIs": "Showings, showing-to-offer, DOM, tracción por etapa, claims verificados y neto solo con datos. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6a59767b102081919bb00b234c393497",
+      "name": "meeting-notes-and-actions",
+      "display_name": "Meeting Notes And Actions",
+      "description": "Convertir notas o transcripciones en acuerdos y acciones trazables. Usar ante solicitudes de NOTES, ACTIONS, FOLLOW_UP.",
+      "source_sha256": "d1601cbc0039c7cbc24850d46d05131810430e0ef453372f481d90c95a19c117",
+      "sections": {
+        "Required Inputs": "Notas o transcripción fuente.",
+        "Modos": "NOTES, ACTIONS, FOLLOW_UP",
+        "Output": "Minuta y tabla de acciones.",
+        "KPIs": "Acciones con responsable y fecha; pendientes resueltos. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6a5976a69a308191bac767a70af15b4c",
+      "name": "new-construction-intelligence",
+      "display_name": "New Construction Intelligence",
+      "description": "Investigar builder, comunidad, ciudad, modelos, inventario, quick move-ins e incentivos de obra nueva. Usar ante solicitudes de BUILDER, COMMUNITY, CITY, INVENTORY, QUICK_MOVE_INS, INCENTIVES, COMPETITION, BUYER_STRATEGY, SALES_STRATEGY, UPDATE.",
+      "source_sha256": "d531b4149fcdfbfd2f28730bba61c1523f1659a3877fc4151bda0c07f6c55114",
+      "sections": {
+        "Required Inputs": "Ciudad o builder/comunidad inequívocos.",
+        "Modos": "BUILDER, COMMUNITY, CITY, INVENTORY, QUICK_MOVE_INS, INCENTIVES, COMPETITION, BUYER_STRATEGY, SALES_STRATEGY, UPDATE",
+        "Output": "Tablas de builders, modelos, QMI, incentivos, costos, fuentes y verification queue.",
+        "KPIs": "Cobertura oficial, vigencia de inventario y términos de incentivos. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6a5976d654e08191996fcd3dc1a85303",
+      "name": "real-estate-strategy-orchestrator",
+      "display_name": "Real Estate Strategy Orchestrator",
+      "description": "Coordinar decisiones inmobiliarias que combinan compra, venta, inversión, financiación, comunidad o marketing. Usar ante solicitudes de QUICK, STANDARD, DEEP, CLIENT.",
+      "source_sha256": "fbeb671e85fe050cfd45eccc9d39d7f2442c598ed740e45913db68b151b82fff",
+      "sections": {
+        "Required Inputs": "Decisión, propiedad o geografía y objetivo.",
+        "Modos": "QUICK, STANDARD, DEEP, CLIENT",
+        "Output": "Brief ejecutivo, matriz de decisión, evidencia y próximo paso.",
+        "KPIs": "Coherencia de cifras; reutilización de datos; rutas válidas. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6a5976f5cfd48191ae9a5bb6deebbcde",
+      "name": "realestate-analyze",
+      "display_name": "Realestate Analyze",
+      "description": "Analizar una propiedad, hacer un snapshot o comparar propiedades con la misma rúbrica. Usar ante solicitudes de QUICK, FULL, COMPARE, CLIENT.",
+      "source_sha256": "a0005403888943b1303d4cc038267a08e366f969917cb3c498399e70ee34682d",
+      "sections": {
+        "Required Inputs": "Dirección inequívoca; dos o más para comparar; decisión del usuario.",
+        "Modos": "QUICK, FULL, COMPARE, CLIENT",
+        "Output": "Perfil, hallazgos, riesgos, comparación y recomendación condicionada.",
+        "KPIs": "Campos verificados, comparabilidad y limitaciones visibles. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6a597700cb5c8191a9f29e343edc6488",
+      "name": "realestate-commercial",
+      "display_name": "Realestate Commercial",
+      "description": "Analizar inmuebles comerciales, multifamily de 5+ unidades y métricas de operación comercial. Usar ante solicitudes de NOI, CAP, LEASE, VALUE_ADD, EXIT.",
+      "source_sha256": "0c79b4f80652e7b40518ec6e13e99e0750746dcfac7dda21540b5033b962ed15",
+      "sections": {
+        "Required Inputs": "Activo, rent roll/operating statements cuando existan, estrategia y horizonte.",
+        "Modos": "NOI, CAP, LEASE, VALUE_ADD, EXIT",
+        "Output": "Underwriting comercial, escenarios y checklist.",
+        "KPIs": "NOI conciliado, cobertura de leases y sensibilidad. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6a59771dcd88819195d491f109f36958",
+      "name": "realestate-comps",
+      "display_name": "Realestate Comps",
+      "description": "Seleccionar, verificar y normalizar comparables vendidos, pendientes y activos para otro análisis. Usar ante solicitudes de SOLD, ACTIVE, PENDING, COMP_SET.",
+      "source_sha256": "68725416aa7ac486f7459bb003aba5d74b8865f616164562615463e504205dda",
+      "sections": {
+        "Required Inputs": "Subject, geografía, tipo y ventana temporal.",
+        "Modos": "SOLD, ACTIVE, PENDING, COMP_SET",
+        "Output": "Comp set y rúbrica de selección.",
+        "KPIs": "Comparables aceptados, cobertura y antigüedad. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6a59773b14cc81919da60721ea231153",
+      "name": "realestate-invest",
+      "display_name": "Realestate Invest",
+      "description": "Underwrite Buy & Hold, rental, BRRRR, flip, land, oportunidades y salidas de inversión residencial. Usar ante solicitudes de BUY_HOLD, RENTAL, BRRRR, FIX_FLIP, OPPORTUNITY, LAND, EXIT, SCENARIOS.",
+      "source_sha256": "2bf55b0b6c64a9e6652c9398fabcaf988bc5c9373272e1ac0886bb76fd4e6942",
+      "sections": {
+        "Required Inputs": "Propiedad o shortlist, estrategia y datos financieros disponibles.",
+        "Modos": "BUY_HOLD, RENTAL, BRRRR, FIX_FLIP, OPPORTUNITY, LAND, EXIT, SCENARIOS",
+        "Output": "Underwriting, cash flow, retornos, MAO condicionado, riesgos y salida.",
+        "KPIs": "Break-even, CoC, cap/NOI, ROI/MAO, downside y confianza. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6a59774969348191872d62c6b104ea56",
+      "name": "realestate-listing",
+      "display_name": "Real Estate Listing Copy",
+      "description": "Genera descripciones de propiedades, headlines y feature highlights basados en hechos verificados para MLS y marketing. Usar para `/realestate listing`, listing description, property listing, MLS description o write listing; evitar datos inventados y lenguaje contrario a Fair Housing.",
+      "source_sha256": "b1f4979a82c224f16fad3d1f1d44fd4a92cea0216f0afcf222d0e20e6396ce3d",
+      "sections": {
+        "Required Inputs": "",
+        "Modos": "",
+        "Output": "",
+        "KPIs": ""
+      }
+    },
+    {
+      "id": "skill-6a59775675b08191a434069db6716112",
+      "name": "realestate-market",
+      "display_name": "Realestate Market",
+      "description": "Analizar oferta, demanda, precios, DOM, inventario y absorción de un mercado; construir radiografía de demanda. Usar ante solicitudes de STATS, SUPPLY_DEMAND, BUYER_DEMAND, CHANGE.",
+      "source_sha256": "581f2602cb3db0f0d37d68447c472996619f917ea04f0b31524fe72137136259",
+      "sections": {
+        "Required Inputs": "Geografía, segmento y periodo.",
+        "Modos": "STATS, SUPPLY_DEMAND, BUYER_DEMAND, CHANGE",
+        "Output": "Tabla de mercado, tendencias, metodología y fuentes.",
+        "KPIs": "Cobertura, actualidad, muestra y comparabilidad. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6a597771501c8191ad13f0b0cec1281c",
+      "name": "realestate-neighborhood",
+      "display_name": "Neighborhood Analysis",
+      "description": "Neighborhood Analysis — schools, crime, walkability, demographics, amenities, growth trajectory, and natural disaster risk with Neighborhood Score (0-100)",
+      "source_sha256": "3259c39907233054b814ac37bba9768cf1872b31b0b4720c7f394669dd609aec",
+      "sections": {
+        "Required Inputs": "",
+        "Modos": "",
+        "Output": "",
+        "KPIs": ""
+      }
+    },
+    {
+      "id": "skill-6a5977bf3ab481918f4f6186e0f37ef5",
+      "name": "realestate-report-pdf",
+      "display_name": "Realestate Report Pdf",
+      "description": "Convertir resultados inmobiliarios ya auditados en un PDF legible y verificable. Usar ante solicitudes de CLIENT, TECHNICAL, COMBINED.",
+      "source_sha256": "f3010af2e7339b4209641474ffb1e68730e85c1c8dc6f2bf461d5977e49cc286",
+      "sections": {
+        "Required Inputs": "Análisis fuente, audiencia y formato.",
+        "Modos": "CLIENT, TECHNICAL, COMBINED",
+        "Output": "PDF final y trazabilidad del análisis fuente.",
+        "KPIs": "Páginas legibles, tablas completas y claims sin cambios. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6a5977e27ffc8191b4536877edfffae4",
+      "name": "antigravity-orchestrator-v2",
+      "display_name": "Antigravity Orchestrator v2",
+      "description": "Orquesta solicitudes de Michael mediante tres roles secuenciales: interpreta la intención y construye un brief, descubre y selecciona el mejor skill personal instalado, y ejecuta ese skill con validación y síntesis. Usar cuando la solicitud sea vaga, compleja, multidisciplinaria, pueda corresponder a varias skills, mencione el Realtor Playbook, pida que Codex elija el workflow correcto, o requiera coordinar investigación, análisis inmobiliario, marketing, contenido, financiación o entregables. No usar como capa adicional cuando el usuario invoque explícitamente una sola skill y la tarea sea clara.",
+      "source_sha256": "2f216faf007602b7bb8f7a46b48d25d0a6d083af8fba9d1f4413d76de1521465",
+      "sections": {
+        "Required Inputs": "",
+        "Modos": "",
+        "Output": "",
+        "KPIs": ""
+      }
+    },
+    {
+      "id": "skill-6a59789944a88191b98756960110450a",
+      "name": "community-intelligence",
+      "display_name": "Community Intelligence",
+      "description": "Investigar HOA, CDD, amenities, restricciones de renta, impuestos, flood y conectividad de una comunidad o vecindario específico. Usar ante solicitudes de COMMUNITY, NEIGHBORHOOD, HOA_CDD, RENTAL_RULES, ONE_SHEET.",
+      "source_sha256": "55e727984613d041aa0243edbee11cfa1346fb29c5e9befe00b72cbfafe0cf58",
+      "sections": {
+        "Required Inputs": "Identidad de comunidad y ubicación.",
+        "Modos": "COMMUNITY, NEIGHBORHOOD, HOA_CDD, RENTAL_RULES, ONE_SHEET",
+        "Output": "Dossier, costos con frecuencia, reglas, fuentes y pendientes.",
+        "KPIs": "Costos y restricciones verificados; contradicciones abiertas. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6a5978ededb88191a68feb4b3ebf6a46",
+      "name": "realestate-screen",
+      "display_name": "Realestate Screen",
+      "description": "Descubrir y filtrar propiedades según un buy box o criterios de inversión y residencia. Usar ante solicitudes de CASH_FLOW, APPRECIATION, BRRRR, FIRST_BUYER, STR, CUSTOM.",
+      "source_sha256": "1c498f3142eb608bbe31372fadabaf6bd3ec41812d52abe14082691486781379",
+      "sections": {
+        "Required Inputs": "Ubicación y criterios; criterios ausentes como hipótesis explícitas.",
+        "Modos": "CASH_FLOW, APPRECIATION, BRRRR, FIRST_BUYER, STR, CUSTOM",
+        "Output": "Candidatos, criterios, fuentes, descartes y cobertura.",
+        "KPIs": "Fit verificable, duplicados, cobertura y falsos positivos. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6a5979cac39881918744d18bf0f49ce0",
+      "name": "reddit-community-digest",
+      "display_name": "Reddit Community Digest",
+      "description": "Investiga y resume las publicaciones principales de uno o varios subreddits públicos mediante ranking, periodo y filtros configurables; captura título, score observado, comentarios, fecha, flair, tipo, enlace y temas con timestamp y limitaciones. Usar cuando el usuario pida conocer qué es popular, nuevo, debatido o relevante en una comunidad de Reddit, crear un top de posts o preparar un digest verificable.",
+      "source_sha256": "8bc3ae72190e149ed174ce8e63450cb85ed072b800dcd8d0a7d01b8c908dccd9",
+      "sections": {
+        "Required Inputs": "",
+        "Modos": "",
+        "Output": "",
+        "KPIs": ""
+      }
+    },
+    {
+      "id": "skill-6a66424a16c48191823307b6b91635c5",
+      "name": "manychat-automation-operator",
+      "display_name": "Manychat Automation Operator",
+      "description": "Construir, auditar y optimizar flows ManyChat con fields, tags, branches, integraciones y pruebas. Usar ante solicitudes de BUILD, AUDIT, OPTIMIZE, QA.",
+      "source_sha256": "cd44ef252a148e200904a554e2ab9b299e35a6525245124bfe1f62966569bccd",
+      "sections": {
+        "Required Inputs": "Funnel handoff, trigger/canal, fields, CRM target y autorización.",
+        "Modos": "BUILD, AUDIT, OPTIMIZE, QA",
+        "Output": "Flow spec, field/tag map, integration payload y QA.",
+        "KPIs": "Trigger-to-lead, branch failures, opt-outs, payload success y conversiones. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6a668082da0c81919bfe40034185e601",
+      "name": "funnel-architect",
+      "display_name": "Funnel Architect",
+      "description": "Diseñar arquitectura de conversión traffic-offer-capture-qualify-CRM-follow-up-appointment. Usar ante solicitudes de CREATE, AUDIT, OPTIMIZE.",
+      "source_sha256": "a82f571c66072b17649f46fdcd126f606a235c19c70dd842aeeb737b3d71317f",
+      "sections": {
+        "Required Inputs": "Audiencia, oferta y resultado; capacidad y baseline cuando existan.",
+        "Modos": "CREATE, AUDIT, OPTIMIZE",
+        "Output": "Funnel map, input/output contracts, responsables, KPI y experiments.",
+        "KPIs": "Conversiones por etapa, tiempo de respuesta, show y costo por resultado. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6a6680d26b148191b672b27d219fdb67",
+      "name": "landing-page-builder",
+      "display_name": "Landing Page Builder",
+      "description": "Construir o reparar una landing concreta con contenido, formulario, tracking y QA. Usar ante solicitudes de BUILD, AUDIT, REPAIR.",
+      "source_sha256": "8dddb01ab025c04a10183111f2e0c4e6fd8ee462eac04ea4aba8b56e3927b618",
+      "sections": {
+        "Required Inputs": "Brief de funnel/oferta, facts, CTA y plataforma.",
+        "Modos": "BUILD, AUDIT, REPAIR",
+        "Output": "Página verificable, form contract y resultado de QA.",
+        "KPIs": "Form completion, CTA clicks, capture success y mobile QA. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6a6a3f705a5881919c975b3cb3df0790",
+      "name": "el-diario-de-ami",
+      "display_name": "El Diario de AMI",
+      "description": "Produce, aprueba y publica El Diario de AMI desde un PDF o DOCX mensual: separa episodios, normaliza guiones, genera la voz autorizada de Michael Cruz con ElevenLabs, mezcla y masteriza la canción oficial, valida el audio, redacta títulos y resúmenes breves con emojis para Spotify, crea copy de Instagram y, tras aprobación explícita, programa el mes completo en Spotify for Creators de lunes a viernes a las 6:00 a. m. hora del Este. Usar también para reanudar lotes, corregir episodios fallidos, verificar publicaciones o generar solamente audio/metadatos sociales.",
+      "source_sha256": "eba402edf73c916b5c56a5e08fbccf7688b59a8b1e9e8cd8e141ab2a90e07d8e",
+      "sections": {
+        "Required Inputs": "",
+        "Modos": "",
+        "Output": "",
+        "KPIs": ""
+      }
+    },
+    {
+      "id": "skill-6a7905213a9481918d51c02785172669",
+      "name": "ami-progress-report-analyzer",
+      "display_name": "AMI Progress Report Analyzer",
+      "description": "Analiza archivos Excel, XLSX o CSV exportados del formulario bilingüe Evaluación de Progreso y Evolución - AMI Team, valida y normaliza las respuestas, calcula progreso contra metas y métricas de pipeline, identifica hallazgos individuales y del equipo, y genera un reporte ejecutivo para Michael Cruz y un reporte 1-1 personalizado para cada agente escrito en la voz de Michael. Usar cuando el usuario entregue respuestas del formulario AMI, solicite analizar progreso de Realtors, preparar sesiones 1-1, producir reportes de coaching o construir planes de acción de 90 días basados en esas respuestas.",
+      "source_sha256": "fb65ce462f91b574ae8bca06ac7055cc7aa4e9e4b6d911ec05961705c16e334f",
+      "sections": {
+        "Required Inputs": "",
+        "Modos": "",
+        "Output": "",
+        "KPIs": ""
+      }
+    },
+    {
+      "id": "skill-6ac114bb9394819197c6f452296bbcdd",
+      "name": "agent-attraction-engine",
+      "display_name": "Agent Attraction Engine",
+      "description": "Diseñar y operar atracción, calificación y activación para AXEN Realty Latino a partir de IAP y oferta documentada. Usar ante solicitudes de BRAIN_AUDIT, IAP, POSITIONING, OFFER, QUALIFY, PRESENT, FOLLOW_UP, ONBOARD, ACTIVATE, FUNNEL_AUDIT.",
+      "source_sha256": "e7d97b9c1d428cff4920e16a909b779ed74a5f163c9a28d75122cd09522d56b1",
+      "sections": {
+        "Required Inputs": "Comunidad AXEN Realty Latino; segmento, oferta/beneficios confirmados y capacidad disponibles.",
+        "Modos": "BRAIN_AUDIT, IAP, POSITIONING, OFFER, QUALIFY, PRESENT, FOLLOW_UP, ONBOARD, ACTIVATE, FUNNEL_AUDIT",
+        "Output": "IAP operativo, diagnóstico, oferta, pipeline, onboarding, métricas y siguiente experimento.",
+        "KPIs": "Qualified conversations, show rate, nuevas incorporaciones brokerage separadas de miembros Latino, activation30, retention90, tiempo/costo por activado. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6ac114dd52fc8191ba906e25dccdf684",
+      "name": "ami-real-estate-coach",
+      "display_name": "Ami Real Estate Coach",
+      "description": "Diagnosticar el negocio de Realtors, analizar reportes de progreso AMI y crear coaching 1-1 y planes 30/60/90 basados en evidencia. Usar ante solicitudes de DIAGNOSE, PROGRESS_REPORT, ONE_TO_ONE, PLAN_90, WEEKLY_REVIEW.",
+      "source_sha256": "ad2d8cb96df7a60703bdee33f6c91ad8bd0a81a9e1bfe17190cc764e98126093",
+      "sections": {
+        "Required Inputs": "Objetivo, periodo, baseline y actividad disponible; aceptar formulario AMI XLSX/CSV.",
+        "Modos": "DIAGNOSE, PROGRESS_REPORT, ONE_TO_ONE, PLAN_90, WEEKLY_REVIEW",
+        "Output": "Reporte ejecutivo de equipo, 1-1 privado, plan con acciones/owners/fechas/KPIs y failure triggers.",
+        "KPIs": "Actividad ejecutada, conversiones del funnel, pipeline, progreso contra meta propia y seguimiento. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6ac11503208c81918a0604c23bf914fc",
+      "name": "brand-architect",
+      "display_name": "Brand Architect",
+      "description": "Crear o auditar marca personal/negocio, posicionamiento, luxury, identidad visual, perfiles y Brand Experience Kit. Usar ante solicitudes de CREATE, PERSONAL, BUSINESS, REBRAND, LUXURY, SOCIAL_AUDIT, CONSISTENCY, POSITIONING, VISUAL_SYSTEM, BRAND_BOARD.",
+      "source_sha256": "06c8a9d836006bae03be1a0d8f2cb8738569e2e9a887cb4a22635ff6ae4d60a9",
+      "sections": {
+        "Required Inputs": "Marca, audience/oferta y activos autorizados disponibles.",
+        "Modos": "CREATE, PERSONAL, BUSINESS, REBRAND, LUXURY, SOCIAL_AUDIT, CONSISTENCY, POSITIONING, VISUAL_SYSTEM, BRAND_BOARD",
+        "Output": "Posicionamiento, sistema visual, brand board/kit o auditoría con acciones.",
+        "KPIs": "Consistencia, diferenciación, legibilidad, profile-to-action y QA visual. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6ac11527e9548191bc444e6257f966f4",
+      "name": "buyer-strategy-and-readiness",
+      "display_name": "Buyer Strategy And Readiness",
+      "description": "Diseñar estrategia de compra y evaluar payment, amortización, affordability, loan paths, readiness, rent-vs-buy y refinance. Usar ante solicitudes de MARKET_STRATEGY, CALCULATE, READINESS, LOAN_PATHS, RENT_VS_BUY, REFINANCE.",
+      "source_sha256": "9f45866bad6489c59a842f7ed85ba3e79cc54ca121396ff4045010336f4069c9",
+      "sections": {
+        "Required Inputs": "Ubicación u objetivo; precio/loan terms para cálculo; income/debts/assets solo para readiness personalizado.",
+        "Modos": "MARKET_STRATEGY, CALCULATE, READINESS, LOAN_PATHS, RENT_VS_BUY, REFINANCE",
+        "Output": "Readiness brief, escenarios de pago y cash to close, fuentes y faltantes.",
+        "KPIs": "Payment íntegro, DTI condicionado, documentos completos y próximos pasos. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita.\n\n- Usar `scripts/mortgage_math.py` para cálculo reproducible. Leer sus limitaciones antes de interpretar resultados."
+      }
+    },
+    {
+      "id": "skill-6ac1439f81a48191a406d791ca543c8f",
+      "name": "florida-market-intelligence",
+      "display_name": "Florida Market Intelligence",
+      "description": "Investigar crecimiento, infraestructura, desarrollos, migración, regulación y noticias de Florida y entregar briefs citables. Usar ante solicitudes de GROWTH, INFRASTRUCTURE, DEVELOPMENTS, NEWS, REGULATION, MIGRATION, CONTENT_BRIEF.",
+      "source_sha256": "f5e9a2e4e76bab9e9312195e40575da3ee0b0c2d07f753e419870857916bb7da",
+      "sections": {
+        "Required Inputs": "Geografía y periodo o tema. Aceptar ejercicios ficticios identificados y respetar una instrucción de no consultar internet; los datos del ejercicio permanecen DATO_DEL_USUARIO.",
+        "Modos": "GROWTH, INFRASTRUCTURE, DEVELOPMENTS, NEWS, REGULATION, MIGRATION, CONTENT_BRIEF",
+        "Output": "Registro de catalizadores, estado, fechas, fuentes y brief.",
+        "KPIs": "Proyectos verificados, fuentes primarias y datos vencidos. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6ac1452e0cb48191ab52a461dbdd5d8f",
+      "name": "international-investor-intelligence",
+      "display_name": "International Investor Intelligence",
+      "description": "Investigar inversionistas internacionales que compran en Florida: países, producto, psicología, canales, confianza y captación. Usar ante solicitudes de MARKET_MAP, INVESTOR_PROFILE, PSYCHOLOGY, CHANNELS, PARTNERS, ACQUISITION_SYSTEM.",
+      "source_sha256": "b9b7a9a35435c53cf8cc939d5a80a934d9bdaf8eb0f2b498acc665abc89a5843",
+      "sections": {
+        "Required Inputs": "Geografía de destino y objetivo; asset class/ticket si están definidos. Aceptar simulaciones identificadas y respetar una instrucción de no consultar internet: los datos aportados siguen DATO_DEL_USUARIO.",
+        "Modos": "MARKET_MAP, INVESTOR_PROFILE, PSYCHOLOGY, CHANNELS, PARTNERS, ACQUISITION_SYSTEM",
+        "Output": "Mapa de evidencia, perfiles hipotéticos, canales verificables, propuesta y piloto 30/60/90 cuando se pide sistema.",
+        "KPIs": "Conversaciones calificadas, proof coverage, appointments, inversión/horas por cliente y conversión por cohorte. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6ac147341764819184021e69ac85b6ad",
+      "name": "seller-opportunity-intelligence",
+      "display_name": "Seller Opportunity Intelligence",
+      "description": "Auditar, descubrir y priorizar propietarios: equity farming con Fetch+MLS, FSBO, expired, absentee, long ownership y distress documentado. Usar ante solicitudes de EQUITY_FARMING, FSBO, EXPIRED, ABSENTEE, LONG_TERM_OWNER, DISTRESS, INVESTOR_OWNER, LEAD_LIST.",
+      "source_sha256": "cece55c9320ff29ca8e529b03266b8f9fe50fa72f60bf1219ff70bcb305c7321",
+      "sections": {
+        "Required Inputs": "EQUITY_FARMING: Fetch completo y sold MLS 12 meses de la misma subdivisión. FSBO: geografía. DISTRESS: condado inequívoco. Aceptar ejercicios ficticios y trabajar sin internet cuando se solicite; mantener sus datos como DATO_DEL_USUARIO.",
+        "Modos": "EQUITY_FARMING, FSBO, EXPIRED, ABSENTEE, LONG_TERM_OWNER, DISTRESS, INVESTOR_OWNER, LEAD_LIST",
+        "Output": "Lista priorizada privada, original rows reconciliation, valor preliminar, diferencia de compra, signals, score, confidence, exclusions y verificación pendiente.",
+        "KPIs": "Cobertura de propietarios, valor evaluable, datos verificados, falsos positivos, oportunidad-a-cita y costo por caso. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6ac149e141188191ac15ff029a8febe4",
+      "name": "real-estate-script-engine",
+      "display_name": "Real Estate Script Engine",
+      "description": "Redactar scripts y secuencias para buyer, seller, FSBO, expired, database, past client, investor, recruit, objeciones y reactivación por canal. Usar ante solicitudes de CALL, VOICEMAIL, SMS, WHATSAPP, EMAIL, DM, VIDEO; FOLLOW_UP, OBJECTION, REACTIVATE, REFERRAL.",
+      "source_sha256": "4fe561bc6ac71e36dd50dea517634a9820d6f6dc0f66127058f43310544fee4d",
+      "sections": {
+        "Required Inputs": "Audience, stage, canal, objetivo; facts y preferencias de contacto disponibles.",
+        "Modos": "CALL, VOICEMAIL, SMS, WHATSAPP, EMAIL, DM, VIDEO; FOLLOW_UP, OBJECTION, REACTIVATE, REFERRAL",
+        "Output": "Texto o secuencia con campos, ramas, CTA y stop rules.",
+        "KPIs": "Reply rate, qualified conversations, appointment/show, opt-outs y errores de personalización. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6ac14c004f608191962cd5aad42a3a72",
+      "name": "florida-offer-system",
+      "display_name": "Florida Offer System",
+      "description": "Auditar y preparar paquetes de ofertas residenciales buyer-side Florida, incluidos borradores autorizados en SkySlope, y detenerse antes de enviar o firmar. Usar ante solicitudes de AUDIT, PREPARE, SKYSLOPE, DOCUMENT_RULES, QA, READY_FOR_REVIEW.",
+      "source_sha256": "25cb2c2d2c0c03defe6a075c3ed42e8b8043c127d3f74f4c47ad423e2c0629f7",
+      "sections": {
+        "Required Inputs": "Agent Profile y términos confirmados de propiedad/partes/precio/financing/deposit/escrow/fechas/inspección/occupancy/expiration/riders.",
+        "Modos": "AUDIT, PREPARE, SKYSLOPE, DOCUMENT_RULES, QA, READY_FOR_REVIEW",
+        "Output": "Offer object, document checklist, missing terms, field audit y READY_FOR_AGENT_REVIEW solo tras QA completo.",
+        "KPIs": "Critical fields matched, required documents present, mismatches abiertos y 0 envío/firma automatizados. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6ac14d98a234819181cb5bc7cc674c3e",
+      "name": "real-estate-content-engine",
+      "display_name": "Real Estate Content Engine",
+      "description": "Producir research editorial, estrategia, calendarios, reels, stories, carruseles, YouTube, podcast, email, blogs, lead magnets, infografías y repurposing por marca. Usar ante solicitudes de RESEARCH, STRATEGY, CALENDAR, SHORT_FORM, LONG_FORM, REEL, STORY, CAROUSEL, YOUTUBE, PODCAST, EMAIL, BLOG, LEAD_MAGNET, INFOGRAPHIC, REPURPOSE, COMPETITOR, SEO_AEO_GEO.",
+      "source_sha256": "6871215e57d620f439f68525312059ff1d7e29b8e2873eb0323d1ae5dde30c4f",
+      "sections": {
+        "Required Inputs": "Objetivo, audience, perfil de marca, formato y facts o pieza fuente.",
+        "Modos": "RESEARCH, STRATEGY, CALENDAR, SHORT_FORM, LONG_FORM, REEL, STORY, CAROUSEL, YOUTUBE, PODCAST, EMAIL, BLOG, LEAD_MAGNET, INFOGRAPHIC, REPURPOSE, COMPETITOR, SEO_AEO_GEO",
+        "Output": "Pieza final o calendario; brief técnico, captions, variants, CTA y medición según formato.",
+        "KPIs": "Retención, conversaciones, leads/citas atribuidos, production time, QA y contenido aprobado. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    },
+    {
+      "id": "skill-6ac14f8fe2e48191a1a870afd07e7130",
+      "name": "meta-housing-engine",
+      "display_name": "Meta Housing Engine",
+      "description": "Investigar competencia, diseñar, auditar y optimizar campañas Meta Housing con copy, creative, forms, CRM, tracking y QA; recuperar Google Search bajo solicitud explícita. Usar ante solicitudes de RESEARCH, COMPETITIVE, CAMPAIGN_BUILD, CREATIVE, INSTANT_FORM, CRM, TRACKING, OPTIMIZE, QA, GOOGLE_SEARCH_COMPAT.",
+      "source_sha256": "bf08cbfe48be3a41be9b74fe56b3c761299985746669c38dc273a6478c970cbf",
+      "sections": {
+        "Required Inputs": "Mercado/offer y objetivo; budget y acceso si se solicita ejecución.",
+        "Modos": "RESEARCH, COMPETITIVE, CAMPAIGN_BUILD, CREATIVE, INSTANT_FORM, CRM, TRACKING, OPTIMIZE, QA, GOOGLE_SEARCH_COMPAT",
+        "Output": "Campaign kit, policy/claim ledger, form, creative brief, tracking y test plan.",
+        "KPIs": "CPL, qualified-lead cost, appointment/show, adquisición y política QA; métricas públicas no equivalen a ROI. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
+      }
+    }
+  ]
+}
