@@ -1,14 +1,11 @@
 # Catálogo instalado — Skills Octubre
 
-Corte: 3 de octubre de 2026. **39 paquetes activos, 38 nombres únicos.** Excluye desinstaladas y Skills de sistema/plugins.
+Corte: 3 de octubre de 2026. **34 paquetes respaldados, 33 nombres únicos.** Excluye desinstaladas y Skills de sistema/plugins.
 
 Consulta [GUIA_DE_USO.md](GUIA_DE_USO.md) para instrucciones, ejemplos y resultados. Los paquetes completos están en [Skills-Octubre.zip](Skills-Octubre.zip).
 
 | Skill | Nombre técnico | Paquetes instalados |
 |---|---|---|
-| Agent Attraction Engine | `agent-attraction-engine` | 1 |
-| AMI Progress Report Analyzer | `ami-progress-report-analyzer` | 1 |
-| Ami Real Estate Coach | `ami-real-estate-coach` | 1 |
 | Antigravity Orchestrator v2 | `antigravity-orchestrator-v2` | 2 |
 | Brand Architect | `brand-architect` | 1 |
 | Buyer Strategy And Readiness | `buyer-strategy-and-readiness` | 1 |
@@ -18,7 +15,6 @@ Consulta [GUIA_DE_USO.md](GUIA_DE_USO.md) para instrucciones, ejemplos y resulta
 | Community Intelligence | `community-intelligence` | 1 |
 | Deep Cma Hybrid Valuation | `deep-cma-hybrid-valuation` | 1 |
 | Dscr Loan Underwriter | `dscr-loan-underwriter` | 1 |
-| El Diario de AMI | `el-diario-de-ami` | 1 |
 | Florida Market Intelligence | `florida-market-intelligence` | 1 |
 | Florida Offer System | `florida-offer-system` | 1 |
 | Funnel Architect | `funnel-architect` | 1 |
@@ -27,7 +23,6 @@ Consulta [GUIA_DE_USO.md](GUIA_DE_USO.md) para instrucciones, ejemplos y resulta
 | Landing Page Builder | `landing-page-builder` | 1 |
 | Listing Intelligence Launch System | `listing-intelligence-launch-system` | 1 |
 | Manychat Automation Operator | `manychat-automation-operator` | 1 |
-| Meeting Notes And Actions | `meeting-notes-and-actions` | 1 |
 | Meta Housing Engine | `meta-housing-engine` | 1 |
 | New Construction Intelligence | `new-construction-intelligence` | 1 |
 | Real Estate Content Engine | `real-estate-content-engine` | 1 |

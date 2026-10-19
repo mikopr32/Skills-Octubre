@@ -1,8 +1,8 @@
 {
   "verified_at": "2026-10-03T15:56:16-04:00",
-  "scope": "Personal skills active at repository root; excludes uninstalled and built-in/plugin skills",
-  "packages": 39,
-  "unique_names": 38,
+  "scope": "Skill packages backed up in this repository; excludes built-in/plugin skills. Repository membership updated 2026-10-19; original skill content verification date preserved.",
+  "packages": 34,
+  "unique_names": 33,
   "skills": [
     {
       "id": "skill-6a5975ee4b8081919a4f1e6be00f4f7c",
@@ -106,19 +106,6 @@
         "Modos": "INTAKE, CMA, LISTING_APPOINTMENT, PRE_MARKET, LAUNCH, PROPERTY_COPY, OPEN_HOUSE, MONITOR, OPTIMIZE, PRICE_ADJUSTMENT, STALE, RELAUNCH, SELLER_UPDATE, CONTENT_10X",
         "Output": "Entregables del modo, seller strategy, launch calendar, KPI y claim ledger.",
         "KPIs": "Showings, showing-to-offer, DOM, tracción por etapa, claims verificados y neto solo con datos. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
-      }
-    },
-    {
-      "id": "skill-6a59767b102081919bb00b234c393497",
-      "name": "meeting-notes-and-actions",
-      "display_name": "Meeting Notes And Actions",
-      "description": "Convertir notas o transcripciones en acuerdos y acciones trazables. Usar ante solicitudes de NOTES, ACTIONS, FOLLOW_UP.",
-      "source_sha256": "d1601cbc0039c7cbc24850d46d05131810430e0ef453372f481d90c95a19c117",
-      "sections": {
-        "Required Inputs": "Notas o transcripción fuente.",
-        "Modos": "NOTES, ACTIONS, FOLLOW_UP",
-        "Output": "Minuta y tabla de acciones.",
-        "KPIs": "Acciones con responsable y fecha; pendientes resueltos. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
       }
     },
     {
@@ -343,58 +330,6 @@
       }
     },
     {
-      "id": "skill-6a6a3f705a5881919c975b3cb3df0790",
-      "name": "el-diario-de-ami",
-      "display_name": "El Diario de AMI",
-      "description": "Produce, aprueba y publica El Diario de AMI desde un PDF o DOCX mensual: separa episodios, normaliza guiones, genera la voz autorizada de Michael Cruz con ElevenLabs, mezcla y masteriza la canción oficial, valida el audio, redacta títulos y resúmenes breves con emojis para Spotify, crea copy de Instagram y, tras aprobación explícita, programa el mes completo en Spotify for Creators de lunes a viernes a las 6:00 a. m. hora del Este. Usar también para reanudar lotes, corregir episodios fallidos, verificar publicaciones o generar solamente audio/metadatos sociales.",
-      "source_sha256": "eba402edf73c916b5c56a5e08fbccf7688b59a8b1e9e8cd8e141ab2a90e07d8e",
-      "sections": {
-        "Required Inputs": "",
-        "Modos": "",
-        "Output": "",
-        "KPIs": ""
-      }
-    },
-    {
-      "id": "skill-6a7905213a9481918d51c02785172669",
-      "name": "ami-progress-report-analyzer",
-      "display_name": "AMI Progress Report Analyzer",
-      "description": "Analiza archivos Excel, XLSX o CSV exportados del formulario bilingüe Evaluación de Progreso y Evolución - AMI Team, valida y normaliza las respuestas, calcula progreso contra metas y métricas de pipeline, identifica hallazgos individuales y del equipo, y genera un reporte ejecutivo para Michael Cruz y un reporte 1-1 personalizado para cada agente escrito en la voz de Michael. Usar cuando el usuario entregue respuestas del formulario AMI, solicite analizar progreso de Realtors, preparar sesiones 1-1, producir reportes de coaching o construir planes de acción de 90 días basados en esas respuestas.",
-      "source_sha256": "fb65ce462f91b574ae8bca06ac7055cc7aa4e9e4b6d911ec05961705c16e334f",
-      "sections": {
-        "Required Inputs": "",
-        "Modos": "",
-        "Output": "",
-        "KPIs": ""
-      }
-    },
-    {
-      "id": "skill-6ac114bb9394819197c6f452296bbcdd",
-      "name": "agent-attraction-engine",
-      "display_name": "Agent Attraction Engine",
-      "description": "Diseñar y operar atracción, calificación y activación para AXEN Realty Latino a partir de IAP y oferta documentada. Usar ante solicitudes de BRAIN_AUDIT, IAP, POSITIONING, OFFER, QUALIFY, PRESENT, FOLLOW_UP, ONBOARD, ACTIVATE, FUNNEL_AUDIT.",
-      "source_sha256": "e7d97b9c1d428cff4920e16a909b779ed74a5f163c9a28d75122cd09522d56b1",
-      "sections": {
-        "Required Inputs": "Comunidad AXEN Realty Latino; segmento, oferta/beneficios confirmados y capacidad disponibles.",
-        "Modos": "BRAIN_AUDIT, IAP, POSITIONING, OFFER, QUALIFY, PRESENT, FOLLOW_UP, ONBOARD, ACTIVATE, FUNNEL_AUDIT",
-        "Output": "IAP operativo, diagnóstico, oferta, pipeline, onboarding, métricas y siguiente experimento.",
-        "KPIs": "Qualified conversations, show rate, nuevas incorporaciones brokerage separadas de miembros Latino, activation30, retention90, tiempo/costo por activado. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
-      }
-    },
-    {
-      "id": "skill-6ac114dd52fc8191ba906e25dccdf684",
-      "name": "ami-real-estate-coach",
-      "display_name": "Ami Real Estate Coach",
-      "description": "Diagnosticar el negocio de Realtors, analizar reportes de progreso AMI y crear coaching 1-1 y planes 30/60/90 basados en evidencia. Usar ante solicitudes de DIAGNOSE, PROGRESS_REPORT, ONE_TO_ONE, PLAN_90, WEEKLY_REVIEW.",
-      "source_sha256": "ad2d8cb96df7a60703bdee33f6c91ad8bd0a81a9e1bfe17190cc764e98126093",
-      "sections": {
-        "Required Inputs": "Objetivo, periodo, baseline y actividad disponible; aceptar formulario AMI XLSX/CSV.",
-        "Modos": "DIAGNOSE, PROGRESS_REPORT, ONE_TO_ONE, PLAN_90, WEEKLY_REVIEW",
-        "Output": "Reporte ejecutivo de equipo, 1-1 privado, plan con acciones/owners/fechas/KPIs y failure triggers.",
-        "KPIs": "Actividad ejecutada, conversiones del funnel, pipeline, progreso contra meta propia y seguimiento. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
-      }
-    },
-    {
       "id": "skill-6ac11503208c81918a0604c23bf914fc",
       "name": "brand-architect",
       "display_name": "Brand Architect",
@@ -490,7 +425,7 @@
       "name": "real-estate-content-engine",
       "display_name": "Real Estate Content Engine",
       "description": "Producir research editorial, estrategia, calendarios, reels, stories, carruseles, YouTube, podcast, email, blogs, lead magnets, infografías y repurposing por marca. Usar ante solicitudes de RESEARCH, STRATEGY, CALENDAR, SHORT_FORM, LONG_FORM, REEL, STORY, CAROUSEL, YOUTUBE, PODCAST, EMAIL, BLOG, LEAD_MAGNET, INFOGRAPHIC, REPURPOSE, COMPETITOR, SEO_AEO_GEO.",
-      "source_sha256": "6871215e57d620f439f68525312059ff1d7e29b8e2873eb0323d1ae5dde30c4f",
+      "source_sha256": "47341da392b3e7126c96f2a943e0ad98bd6230d50ac3908a35bdf9d1539ff940",
       "sections": {
         "Required Inputs": "Objetivo, audience, perfil de marca, formato y facts o pieza fuente.",
         "Modos": "RESEARCH, STRATEGY, CALENDAR, SHORT_FORM, LONG_FORM, REEL, STORY, CAROUSEL, YOUTUBE, PODCAST, EMAIL, BLOG, LEAD_MAGNET, INFOGRAPHIC, REPURPOSE, COMPETITOR, SEO_AEO_GEO",
@@ -511,5 +446,6 @@
         "KPIs": "CPL, qualified-lead cost, appointment/show, adquisición y política QA; métricas públicas no equivalen a ROI. Registrar periodo y denominador. No fijar metas o resultados sin baseline o instrucción explícita."
       }
     }
-  ]
+  ],
+  "repository_updated_at": "2026-10-19"
 }

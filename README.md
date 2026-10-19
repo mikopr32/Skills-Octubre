@@ -2,7 +2,7 @@
 
 Inventario y guía de uso de las Skills personales instaladas de Michael Cruz.
 
-**Corte:** 3 de octubre de 2026, hora de Nueva York. **39 paquetes activos, 38 nombres únicos.** Estado verificado contra el checkout de Skills personales y sus rutas remotas; la lista visible del chat puede estar desactualizada.
+**Corte:** 3 de octubre de 2026, hora de Nueva York. **34 paquetes respaldados, 33 nombres únicos.** Estado verificado contra el checkout de Skills personales y sus rutas remotas; la lista visible del chat puede estar desactualizada.
 
 ## Consultar y usar
 
@@ -16,14 +16,14 @@ Cada ficha dentro de GUIA_DE_USO.md explica cuándo usar la Skill, qué darle, u
 
 ## Contenido
 
-- [Catálogo de las 38 capacidades por nombre](CATALOGO.md).
+- [Catálogo de las 33 capacidades por nombre](CATALOGO.md).
 - [Guía completa de uso](GUIA_DE_USO.md).
 - [Inventario verificable](inventory.json): IDs, nombres, descripción, modos y hash del controlador.
-- [Respaldo de los 39 paquetes activos](Skills-Octubre.zip): controladores, referencias, scripts y assets propios de cada paquete.
+- [Respaldo de los 34 paquetes](Skills-Octubre.zip): controladores, referencias, scripts y assets propios de cada paquete.
 
 Las copias de `skills/` dentro del ZIP son un respaldo. Estar en GitHub no instala automáticamente una Skill en ChatGPT. Los métodos internos de paquetes consolidados se conservan; no se presentan como nuevas instalaciones independientes.
 
-El ZIP también conserva las 38 fichas individuales y la estructura completa de carpetas. Los documentos Markdown de este repositorio permiten consultar la guía sin descargar el respaldo.
+El ZIP también conserva las 33 fichas individuales y la estructura completa de carpetas. Los documentos Markdown de este repositorio permiten consultar la guía sin descargar el respaldo.
 
 ## Estado de la limpieza
 
@@ -32,9 +32,7 @@ El inventario conserva lo realmente instalado, aunque figure como candidato a de
 - **Antigravity Orchestrator v2:** dos copias activas con el mismo nombre.
 - **Real Estate Listing Copy:** versión anterior; preferir Listing Intelligence Launch System.
 - **Neighborhood Analysis:** versión anterior; preferir Community Intelligence.
-- **AMI Progress Report Analyzer:** versión anterior; preferir AMI Real Estate Coach.
 
-No se realizó ninguna desinstalación en esta tarea. El Diario de AMI permanece independiente para producción del podcast. Reddit Community Digest también aparece instalado.
 
 ## Rutas de trabajo recomendadas
 
@@ -43,9 +41,6 @@ No se realizó ninguna desinstalación en esta tarea. El Diario de AMI permanece
 | Evaluar una compra/inversión | Strategy Orchestrator → Analyze/Comps/CMA → Invest/Buyer Strategy/DSCR → Community según la decisión |
 | Priorizar propietarios | Seller Opportunity Intelligence → CMA cuando haya comparables → Script Engine para borradores |
 | Lanzar un listing | Listing Intelligence Launch System → Content Engine/Meta Housing según canal → Funnel/Landing/ManyChat según implementación |
-| Atraer agentes | Agent Attraction Engine → Brand/Content → Funnel → seguimiento y activación |
-| Coaching AMI | AMI Real Estate Coach → análisis del formulario → 1-1 y seguimiento |
-| Podcast | El Diario de AMI → guiones/metadatos → audio autorizado → QA → publicación autorizada |
 
 No es obligatorio ejecutar toda una ruta: usa el mínimo método que resuelva el pedido y reutiliza datos ya verificados.
 
@@ -54,3 +49,7 @@ No es obligatorio ejecutar toda una ruta: usa el mínimo método que resuelva el
 Se verificaron instalación, existencia de paquetes, correspondencia de nombres y respaldo de archivos. Las guías describen funciones declaradas en los controladores actuales. No certifican que todas las integraciones estén configuradas ni que cada modo haya sido probado en producción. Una Skill no aporta credenciales, APIs o autorización por sí sola. La presencia de datos históricos en referencias no los convierte en información vigente.
 
 Los KPIs se interpretan con periodo y denominador. No se fijan metas comerciales, presupuestos o resultados sin datos y autorización pertinentes. No se incluyen paquetes desinstalados como entradas del catálogo.
+
+## Organización de repositorios
+
+Separación de paquetes realizada el 19 de octubre de 2026. Los paquetes personales trasladados se consultan en [Michael-Personal-Skills](https://github.com/mikopr32/Michael-Personal-Skills). La fecha de corte anterior describe el respaldo original; esta organización no desinstala skills de ChatGPT.
